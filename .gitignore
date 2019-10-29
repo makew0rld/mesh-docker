@@ -1,0 +1,6 @@
+# Local Docker volumes
+data/*
+!data/.gitempty
+
+# Other stuff
+!.vscode
