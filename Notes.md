@@ -1,18 +1,21 @@
 # Notes
 
+## To Do / Testing
+- [x] Does CJDNS and Ygg work?
+  - [ ] Together?
+- IPFS
+  - [x] Basic config changes
+  - [ ] Swarm
+
 ## Existing images
 - chpio/cjdns has no tools, needed by `ipfs-swarm.sh`
   - Needs `/opt/cjdns/publictoip6`
-  - Make my own image
+  - [ ] Make my own image
     - **How do other containers get peer lists?**
       - Write them to disk every 30 secs or something?
       - Maybe script outside docker that runs and checks stuff? - messy
 - yggdrasil
-  - Change endpoint for `yggdrasilctl`
-
-## Testing
-- [x] Does CJDNS and Ygg work?
-  - [ ] Together?
+  - [ ] Change endpoint for `yggdrasilctl`
 
 ## Install
 - [ ] Make multiple docker-compose files for different setups
@@ -29,9 +32,10 @@
 
 ## Other images
 - CJDNS with tools
-- Generic debian image for accessing everything?
-  - Install extra-tools in there?
-  - Install scripts like `ipfs-swarm.sh` in there
+- [x] Generic debian image for accessing everything?
+  - [x] Install extra-tools in there
+  - [x] Install scripts like `ipfs-swarm.sh` in there
+  - [ ] What pkgs need to be installed that are assumed to be installed usually?
 - [ ] mesh_webserver
   - Nginx based
   - Run `APP` html commands after install depending on what was installed

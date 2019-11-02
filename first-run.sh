@@ -10,8 +10,8 @@ rm -rf data/ssb_data
 docker-compose up -d
 
 # TODO: Needed?
-echo "Waiting 10 secs for everything to start..."
-sleep 10
+echo "Waiting 20 secs for everything to start..."
+sleep 20
 echo "Done waiting."
 
 source setup/ipfs/setup.sh

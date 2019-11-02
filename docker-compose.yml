@@ -25,7 +25,6 @@ services:
     # mesh_ssb-server:
     #     container_name: mesh_ssb-server
     #     image: distributedmind/ssb-server:latest
-    #     restart: always
     #     environment:
     #         - DOMAIN=example.org
     #     ports:
@@ -45,3 +44,8 @@ services:
             # For public gateway:
             #- "8080:8080"
             - "127.0.0.1:5001:5001"
+
+    mesh_node:
+        container_name: mesh_node
+        build: ./dockerfiles/mesh_node
+        tty: true
